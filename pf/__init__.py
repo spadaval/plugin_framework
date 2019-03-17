@@ -1,4 +1,4 @@
-from .pf.infra.data_manager import DataManager
+from .infra.data_manager import DataManager
 
 import websockets
 import logging
@@ -10,13 +10,17 @@ logger = logging.getLogger()
 def init_logger(level, path):
     logger.setLevel(logging.DEBUG)
     # create file handler which logs even debug messages
-    fh = logging.FileHandler(path)
-    fh.setLevel(logging.DEBUG)
+    fh = None
+    try:
+        fh = logging.FileHandler(path)
+        fh.setLevel(logging.DEBUG)
+        logger.addHandler(fh)
+    except:
+        logger.debug("Failed to create log file")
     # create console handler with a provided log level
     ch = logging.StreamHandler()
     ch.setLevel(level)
     # add the handlers to the logger
-    logger.addHandler(fh)
     logger.addHandler(ch)
 
 
