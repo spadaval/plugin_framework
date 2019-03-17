@@ -11,10 +11,10 @@ from .utils import grabImage, get_image_to_numpy
 
 @image_class
 class LayerImage(Image):
-    def __init__(self, data_manager, mode, **kwargs):
+    def __init__(self, data_manager, krita, **kwargs):
         self.data = None
         self.data_manager = data_manager
-        if mode == "client":
+        if krita:
             self.layer_name = kwargs["layer"]
             self.layer = self.get_layer_from_name(self.layer_name)
 
@@ -29,7 +29,7 @@ class LayerImage(Image):
 
     def recv_tile_data(self, tile_key, data):
         # Handle data leaded from the server, write to krita
-        if self.mode == "client":
+        if self.krita:
             self.update_krita(tile_key, data)
 
     def update(self):

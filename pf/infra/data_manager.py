@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 class DataManager:
     def __init__(self, ws, mode="client"):
         self.images = {}
+        self.dependencies = {}
         self.reverse = {}
         self.channel = Channel(ws, self)
         self.mode = mode
@@ -40,7 +41,10 @@ class DataManager:
         uuid = self.reverse[image]
         logger.debug("Handling local tile {} update in image {}...".format(key, uuid))
         message_data = {"uuid": uuid, "tile_key": key, "data": tile_data}
+
         await self.channel.send_message("UpdateTileData", message_data)
+        for dependent in self.dependencies[image]:
+            dependent.update()
 
     async def recv_tile_update(self, uuid, key, tile_data):
         logger.debug("Updating tile {} in image {}".format(key, uuid))
@@ -53,10 +57,21 @@ class DataManager:
 
     async def recv_image_definition(self, image_dict):
         logger.debug("Loading remote image...")
+        if image_dict["uuid"] in self.images:
+            logger.debug("Image already exists (or uuid collision)...")
+            return
+
         image_dict["krita"] = self.mode == "client"  # inject the mode of operation
         image_dict["data_manager"] = self  # inject the data manager
         image = load_image(image_dict)
         self.register_image(image, uuid=image_dict["uuid"])
+        logger.debug("Remote image loaded successfully")
 
     async def handle_message(self, message):
         await self.channel.handle_message(message)
+
+    def add_dependency(self, source, dependent):
+        if source not in self.dependencies:
+            self.dependencies[source] = []
+
+        self.dependencies[source].append(dependent)

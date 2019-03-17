@@ -13,6 +13,8 @@ dist
 *ipynb*
 
 __pycache__
+*__pycache__*
+*pycache*
 
 *.egg_info*
 
