@@ -4,8 +4,9 @@ from abc import ABC, abstractmethod
 
 
 class Image(ABC):
-    def __init__(self, data_manager, mode="client"):
+    def __init__(self, data_manager, krita=True):
         self.data = None
+        self.krita = krita
         self.data_manager = data_manager
         self.data_manager.register_image(self)
 
