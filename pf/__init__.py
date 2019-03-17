@@ -35,8 +35,13 @@ async def run_client():
     await data_manager.channel.run_loop()
 
 
+async def server_coroutine(ws, path):
+    data_manager = DataManager(ws, mode="server")
+    logger.debug("Server init complete")
+    while True:
+        message = await ws.recv()
+        await data_manager.channel.handle_message(message)
+
+
 async def run_server():
-    ws = await websockets.serve("ws://localhost:8765")
-    data_manager = DataManager(ws, mode="client")
-    logger.debug("Client init complete")
-    await data_manager.channel.run_loop()
+    await websockets.serve(server_coroutine, host="localhost", port=8765)
