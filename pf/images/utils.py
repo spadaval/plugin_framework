@@ -9,7 +9,7 @@ def getActiveDocument():
 	Get the Active Krita Document
 	"""
 	document = Krita.activeDocument()
-	node = doc.rootNode()
+	node = document.rootNode()
 	return node
 
 
@@ -51,7 +51,7 @@ def get_numpy_to_image(numpyImage):
 	"""
 	Convert image from Numpy array to Krita native QByteArray
 	"""
-	base64.b64encode(numpyImage)
+	img_base64_converted = base64.b64encode(numpyImage)
 	img_conv = QByteArray()
 	imageData_converted_back = img_conv.fromBase64(img_base64_converted)
 	return imageData_converted_back
