@@ -25,9 +25,11 @@ class LayerImage(Image):
         self.data_manager.update_tile_data()
 
     def recv_tile_data(self, tile_key, data):
+        # Handle data leaded from the server, write to krita
         if self.mode == "client":
             self.update_krita(tile_key, data)
 
     def update(self):
         if self.mode == "client":
             self.layer.getPixelData()  # Fill this in
+            # Get the data, load it, generate requests to the datamanager
