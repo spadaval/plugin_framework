@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import asyncio
 import logging
 import random
 
@@ -75,3 +76,9 @@ class DataManager:
             self.dependencies[source] = []
 
         self.dependencies[source].append(dependent)
+
+    async def watch_images(self):
+        while True:
+            for uuid, image in self.images:
+                image.update()
+            await asyncio.sleep(2)

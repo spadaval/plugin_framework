@@ -8,10 +8,11 @@ from .image_registry import image_class
 
 @image_class
 class LayerImage(Image):
-    def __init__(self, data_manager, krita, **kwargs):
+    def __init__(self, data_manager, mode, **kwargs):
         self.data = None
         self.data_manager = data_manager
-        if krita:
+        self.krita = mode == "client"
+        if self.krita:
             self.layer_name = kwargs["layer"]
             self.layer = self.get_layer_from_name(self.layer_name)
 
