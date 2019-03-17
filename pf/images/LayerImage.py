@@ -5,6 +5,9 @@ from .images.Image import Image
 
 from .image_registry import image_class
 
+from .utils import grabImage, get_image_to_numpy
+
+
 
 @image_class
 class LayerImage(Image):
@@ -31,5 +34,7 @@ class LayerImage(Image):
 
     def update(self):
         if self.mode == "client":
-            self.layer.getPixelData()  # Fill this in
-            # Get the data, load it, generate requests to the datamanager
+            imageData = grabImage(self.layer, 0, 0, 150, 150)  
+			image_numpy_format = get_image_to_numpy(imageData)
+			self.update_data(image_numpy_format)
+
