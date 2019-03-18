@@ -65,7 +65,7 @@ class DataManager:
         logger.debug("Updating remote about new image {}...".format(image_dict))
         await self.channel.send_message("RegisterImage", image_dict)
 
-    async def recv_image_definition(self, image_dict):
+    async def recv_image_definition(self, *image_dict):
         logger.debug("Loading remote image...")
         if image_dict["uuid"] in self.images:
             logger.warn("Image already exists (or uuid collision)...")
