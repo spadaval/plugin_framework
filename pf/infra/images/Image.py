@@ -20,4 +20,9 @@ class Image(ABC):
 
     @abstractmethod
     def update(self):
+        """
+        Update the image. Called periodically, or when dependencies change.
+        Should return boolean, True -> change occurred.
+        This allows the system to update its dependencies.
+        """
         pass

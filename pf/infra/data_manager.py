@@ -6,13 +6,15 @@ import random
 
 from .channel import Channel
 from .utils import load_image
+from .images import LayerImage, ComputedImage
 
 logger = logging.getLogger(__name__)
 
 
 class DataManager:
     def __init__(self, ws, mode="client"):
-        self.images = {}
+        self.layer_images = {}
+        self.computed_images = {}
         self.dependencies = {}
         self.reverse = {}
         self.channel = Channel(ws, self)
@@ -29,12 +31,17 @@ class DataManager:
         if uuid is None:
             uuid = self.get_new_uuid()
         logger.debug("Registering new image with uuid {}".format(uuid))
-
-        self.images[uuid] = {
+        obj = {
             "class": image.__name__,
             "object": image,
             "tile_map": image.get_tile_dict(),
         }
+        if isinstance(image, LayerImage):
+            self.layer_images[uuid] = obj
+        elif isinstance(image, ComputedImage):
+            self.computed_images[uuid] = obj
+        else:
+            logger.error("Unknown image type")
         self.reverse[image] = uuid
         return uuid
 
@@ -53,23 +60,22 @@ class DataManager:
         image.update_tile_data(key, tile_data)
 
     async def send_image_definition(self, image):
-        logger.debug("Updating remote about new image...")
-        await self.channel.send_message("RegisterImage", image.get_dict())
+        image_dict = image.get_dict()
+        image_dict["uuid"] = self.reverse[image]
+        logger.debug("Updating remote about new image {}...".format(image_dict))
+        await self.channel.send_message("RegisterImage", image_dict)
 
     async def recv_image_definition(self, image_dict):
         logger.debug("Loading remote image...")
         if image_dict["uuid"] in self.images:
-            logger.debug("Image already exists (or uuid collision)...")
+            logger.warn("Image already exists (or uuid collision)...")
             return
 
-        image_dict["krita"] = self.mode == "client"  # inject the mode of operation
+        image_dict["mode"] = self.mode  # inject the mode of operation
         image_dict["data_manager"] = self  # inject the data manager
         image = load_image(image_dict)
         self.register_image(image, uuid=image_dict["uuid"])
         logger.debug("Remote image loaded successfully")
-
-    async def handle_message(self, message):
-        await self.channel.handle_message(message)
 
     def add_dependency(self, source, dependent):
         if source not in self.dependencies:
@@ -77,8 +83,12 @@ class DataManager:
 
         self.dependencies[source].append(dependent)
 
-    async def watch_images(self):
+    async def watch_krita(self):
         while True:
-            for uuid, image in self.images:
-                image.update()
+            logger.debug("Scanning layer images...")
+            for uuid, image in self.layer_images:
+                if image.update():
+                    for dependent in self.dependencies[image]:
+                        image.update()
+
             await asyncio.sleep(2)

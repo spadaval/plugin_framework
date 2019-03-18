@@ -1,4 +1,4 @@
-from ..images import image_classes
+from .images import image_classes
 
 
 def load_image(image_dict, data_manager):

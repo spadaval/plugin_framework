@@ -14,11 +14,16 @@ class Channel:
         self.ws.send(bson.dumps(message))
 
     async def process_message(self, message):
-        if message["request"] == "":
+        if message["request"] == "RegisterImage":
+            self.data_manager.update_tile()
+        elif message["request"] == "UpdateTileData":
+            self.data_manager.update_tile()
+        elif message["request"] == "RegisterImage":
             self.data_manager.update_tile()
 
-    async def run_loop(self):
-        logger.debug("Begin loop...")
+    async def listen(self):
+        logger.debug("Listening for updates...")
         while True:
             message = await self.ws.recv()
+            logger.debug("Got a message!")
             await self.process_message(message)

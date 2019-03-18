@@ -1,0 +1,273 @@
+Failed to load krita
+Using selector: SelectSelector
+Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>
+Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1> took 32.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+poll took 32.000 ms: 1 events
+connect <socket.socket fd=552, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0> to ('::1', 8765, 0, 0)
+poll took 1000.000 ms: 1 events
+connect <socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0> to ('127.0.0.1', 8765)
+poll took 1000.000 ms: 1 events
+Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:14:58,469 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:14:58,561 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:14:58,581 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>
+2019-03-18 11:14:58,605 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1> took 31.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:14:58,607 - asyncio - DEBUG - poll took 16.000 ms: 1 events
+2019-03-18 11:14:58,611 - asyncio - DEBUG - connect <socket.socket fd=560, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0> to ('::1', 8765, 0, 0)
+2019-03-18 11:14:59,617 - asyncio - INFO - poll took 1000.000 ms: 1 events
+2019-03-18 11:14:59,628 - asyncio - DEBUG - connect <socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0> to ('127.0.0.1', 8765)
+2019-03-18 11:15:00,636 - asyncio - INFO - poll took 1000.000 ms: 1 events
+2019-03-18 11:15:00,645 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:15:34,576 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:15:34,638 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:15:34,685 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:15:34,707 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 31.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:15:34,709 - asyncio - DEBUG - poll took 31.000 ms: 1 events
+2019-03-18 11:15:34,717 - asyncio - INFO - <Server sockets=[<socket.socket fd=804, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8765, 0, 0)>, <socket.socket fd=892, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8765)>]> is serving
+2019-03-18 11:15:34,727 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:16:36,785 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:16:36,903 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:16:36,949 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:16:36,982 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 31.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:16:36,986 - asyncio - DEBUG - poll took 31.000 ms: 1 events
+2019-03-18 11:16:37,004 - asyncio - INFO - <Server sockets=[<socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8765)>, <socket.socket fd=780, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8765, 0, 0)>]> is serving
+2019-03-18 11:16:37,021 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:17:16,322 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:17:16,406 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:17:16,432 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:17:16,451 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 16.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:17:16,453 - asyncio - DEBUG - poll took 16.000 ms: 1 events
+2019-03-18 11:17:16,467 - asyncio - INFO - <Server sockets=[<socket.socket fd=884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8765)>, <socket.socket fd=760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8765, 0, 0)>]> is serving
+2019-03-18 11:17:16,475 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:17:38,941 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:17:39,040 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:17:39,091 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:17:39,131 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 31.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:17:39,138 - asyncio - DEBUG - poll took 47.000 ms: 1 events
+2019-03-18 11:17:39,156 - asyncio - INFO - <Server sockets=[<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8765)>, <socket.socket fd=1000, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8765, 0, 0)>]> is serving
+2019-03-18 11:17:39,170 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:17:39,173 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 0.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:17:39,196 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:17:50,669 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:17:50,732 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:17:50,752 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:17:50,774 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 16.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:17:50,776 - asyncio - DEBUG - poll took 16.000 ms: 1 events
+2019-03-18 11:17:50,788 - asyncio - INFO - <Server sockets=[<socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8765)>, <socket.socket fd=932, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8765, 0, 0)>]> is serving
+2019-03-18 11:17:50,792 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:19:12,314 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:19:12,382 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:19:12,418 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:19:22,647 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:19:22,710 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:19:22,735 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1>
+2019-03-18 11:19:22,761 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>, flags=<AddressInfo.AI_PASSIVE: 1> took 16.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:19:22,763 - asyncio - DEBUG - poll took 16.000 ms: 1 events
+2019-03-18 11:19:22,775 - asyncio - INFO - <Server sockets=[<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8765)>, <socket.socket fd=636, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 8765, 0, 0)>]> is serving
+2019-03-18 11:19:22,780 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:24:34,570 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:24:34,719 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:24:54,414 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:24:54,487 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:30:08,906 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:30:08,963 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:30:48,992 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:30:49,070 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:30:49,072 - root - DEBUG - Starting server...
+2019-03-18 11:32:29,353 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:32:29,415 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:32:29,428 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>
+2019-03-18 11:32:29,449 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1> took 15.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:32:29,450 - asyncio - DEBUG - poll took 15.000 ms: 1 events
+2019-03-18 11:32:29,453 - asyncio - DEBUG - connect <socket.socket fd=724, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0> to ('::1', 8765, 0, 0)
+2019-03-18 11:32:29,457 - websockets.protocol - DEBUG - server - state = CONNECTING
+2019-03-18 11:32:29,458 - websockets.protocol - DEBUG - server - event = connection_made(<_SelectorSocketTransport fd=816 read=idle write=<idle, bufsize=0>>)
+2019-03-18 11:32:29,459 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:32:29,469 - websockets.protocol - DEBUG - client - state = CONNECTING
+2019-03-18 11:32:29,479 - websockets.protocol - DEBUG - client - event = connection_made(<_SelectorSocketTransport fd=724 read=idle write=<idle, bufsize=0>>)
+2019-03-18 11:32:29,482 - asyncio - DEBUG - <socket.socket fd=724, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 53331, 0, 0), raddr=('::1', 8765, 0, 0)> connected to localhost:8765: (<_SelectorSocketTransport fd=724 read=polling write=<idle, bufsize=0>>, <websockets.client.WebSocketClientProtocol object at 0x08D24530>)
+2019-03-18 11:32:29,486 - websockets.protocol - DEBUG - server - state = OPEN
+2019-03-18 11:32:29,487 - root - DEBUG - Server init complete
+2019-03-18 11:32:29,487 - root - DEBUG - Waiting for message...
+2019-03-18 11:32:29,488 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:32:29,490 - websockets.protocol - DEBUG - client - state = OPEN
+2019-03-18 11:32:29,504 - root - DEBUG - Client init complete
+2019-03-18 11:32:39,523 - asyncio - INFO - poll 10000.000 ms took 10000.000 ms: timeout
+2019-03-18 11:32:39,564 - websockets.protocol - DEBUG - client ! timed out waiting for TCP close
+2019-03-18 11:32:39,573 - websockets.protocol - DEBUG - client x half-closing TCP connection
+2019-03-18 11:32:39,577 - websockets.protocol - DEBUG - server - event = eof_received()
+2019-03-18 11:32:39,582 - websockets.protocol - DEBUG - server ! failing WebSocket connection in the OPEN state: 1006 [no reason]
+2019-03-18 11:32:39,583 - websockets.protocol - DEBUG - server - event = connection_lost(None)
+2019-03-18 11:32:39,584 - websockets.protocol - DEBUG - server - state = CLOSED
+2019-03-18 11:32:39,585 - websockets.protocol - DEBUG - server x code = 1006, reason = [no reason]
+2019-03-18 11:32:39,586 - websockets.protocol - DEBUG - server x half-closing TCP connection
+2019-03-18 11:32:39,596 - asyncio - DEBUG - poll 9985.000 ms took 0.000 ms: 1 events
+2019-03-18 11:32:39,597 - asyncio - DEBUG - <_SelectorSocketTransport fd=724 read=polling write=<idle, bufsize=0>> received EOF
+2019-03-18 11:32:39,599 - websockets.protocol - DEBUG - client - event = eof_received()
+2019-03-18 11:32:39,588 - websockets.server - ERROR - Error in connection handler
+Traceback (most recent call last):
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 674, in transfer_data
+    message = yield from self.read_message()
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 742, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 815, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 884, in read_frame
+    extensions=self.extensions,
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\framing.py", line 99, in read
+    data = yield from reader(2)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\asyncio\streams.py", line 677, in readexactly
+    raise IncompleteReadError(incomplete, n)
+asyncio.streams.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\server.py", line 169, in handler
+    yield from self.ws_handler(self, path)
+  File "server.py", line 19, in handle_message
+    logger.debug("Waiting for message...")
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 434, in recv
+    yield from self.ensure_open()
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 646, in ensure_open
+    ) from self.transfer_data_exc
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006 (connection closed abnormally [internal]), no reason
+2019-03-18 11:32:39,603 - websockets.protocol - DEBUG - client - event = connection_lost(None)
+2019-03-18 11:32:39,603 - websockets.protocol - DEBUG - client - state = CLOSED
+2019-03-18 11:32:39,603 - websockets.protocol - DEBUG - client x code = 1006, reason = [no reason]
+2019-03-18 11:32:39,620 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:32:56,013 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:32:56,079 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:32:56,092 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>
+2019-03-18 11:32:56,114 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1> took 31.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:32:56,117 - asyncio - DEBUG - poll took 16.000 ms: 1 events
+2019-03-18 11:32:56,120 - asyncio - DEBUG - connect <socket.socket fd=868, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0> to ('::1', 8765, 0, 0)
+2019-03-18 11:32:56,127 - websockets.protocol - DEBUG - server - state = CONNECTING
+2019-03-18 11:32:56,128 - websockets.protocol - DEBUG - server - event = connection_made(<_SelectorSocketTransport fd=864 read=idle write=<idle, bufsize=0>>)
+2019-03-18 11:32:56,128 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:32:56,136 - websockets.protocol - DEBUG - client - state = CONNECTING
+2019-03-18 11:32:56,151 - websockets.protocol - DEBUG - client - event = connection_made(<_SelectorSocketTransport fd=868 read=idle write=<idle, bufsize=0>>)
+2019-03-18 11:32:56,154 - asyncio - DEBUG - <socket.socket fd=868, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 53344, 0, 0), raddr=('::1', 8765, 0, 0)> connected to localhost:8765: (<_SelectorSocketTransport fd=868 read=polling write=<idle, bufsize=0>>, <websockets.client.WebSocketClientProtocol object at 0x08D47F50>)
+2019-03-18 11:32:56,157 - websockets.protocol - DEBUG - server - state = OPEN
+2019-03-18 11:32:56,161 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:32:56,162 - root - DEBUG - Waiting for message...
+2019-03-18 11:32:56,164 - websockets.protocol - DEBUG - client - state = OPEN
+2019-03-18 11:32:56,184 - root - DEBUG - Client init complete
+2019-03-18 11:33:06,215 - asyncio - INFO - poll 10000.000 ms took 10000.000 ms: timeout
+2019-03-18 11:33:06,254 - websockets.protocol - DEBUG - client ! timed out waiting for TCP close
+2019-03-18 11:33:06,255 - websockets.protocol - DEBUG - client x half-closing TCP connection
+2019-03-18 11:33:06,256 - websockets.protocol - DEBUG - server - event = eof_received()
+2019-03-18 11:33:06,259 - websockets.protocol - DEBUG - server ! failing WebSocket connection in the OPEN state: 1006 [no reason]
+2019-03-18 11:33:06,260 - websockets.protocol - DEBUG - server - event = connection_lost(None)
+2019-03-18 11:33:06,261 - websockets.protocol - DEBUG - server - state = CLOSED
+2019-03-18 11:33:06,262 - websockets.protocol - DEBUG - server x code = 1006, reason = [no reason]
+2019-03-18 11:33:06,264 - websockets.protocol - DEBUG - server x half-closing TCP connection
+2019-03-18 11:33:06,265 - websockets.server - ERROR - Error in connection handler
+Traceback (most recent call last):
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 674, in transfer_data
+    message = yield from self.read_message()
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 742, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 815, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 884, in read_frame
+    extensions=self.extensions,
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\framing.py", line 99, in read
+    data = yield from reader(2)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\asyncio\streams.py", line 677, in readexactly
+    raise IncompleteReadError(incomplete, n)
+asyncio.streams.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\server.py", line 169, in handler
+    yield from self.ws_handler(self, path)
+  File "server.py", line 19, in handle_message
+    logger.debug("Waiting for message...")
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 434, in recv
+    yield from self.ensure_open()
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 646, in ensure_open
+    ) from self.transfer_data_exc
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006 (connection closed abnormally [internal]), no reason
+2019-03-18 11:33:06,269 - asyncio - DEBUG - poll 10000.000 ms took 0.000 ms: 1 events
+2019-03-18 11:33:06,270 - asyncio - DEBUG - <_SelectorSocketTransport fd=868 read=polling write=<idle, bufsize=0>> received EOF
+2019-03-18 11:33:06,272 - websockets.protocol - DEBUG - client - event = eof_received()
+2019-03-18 11:33:06,277 - websockets.protocol - DEBUG - client - event = connection_lost(None)
+2019-03-18 11:33:06,278 - websockets.protocol - DEBUG - client - state = CLOSED
+2019-03-18 11:33:06,279 - websockets.protocol - DEBUG - client x code = 1006, reason = [no reason]
+2019-03-18 11:33:06,294 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:34:32,398 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 11:34:32,464 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 11:34:32,477 - asyncio - DEBUG - Get address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1>
+2019-03-18 11:34:32,496 - asyncio - DEBUG - Getting address info localhost:8765, type=<SocketKind.SOCK_STREAM: 1> took 16.000ms: [(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('::1', 8765, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 0, '', ('127.0.0.1', 8765))]
+2019-03-18 11:34:32,498 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:34:32,503 - asyncio - DEBUG - connect <socket.socket fd=568, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0> to ('::1', 8765, 0, 0)
+2019-03-18 11:34:32,510 - websockets.protocol - DEBUG - server - state = CONNECTING
+2019-03-18 11:34:32,512 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:34:32,513 - websockets.protocol - DEBUG - server - event = connection_made(<_SelectorSocketTransport fd=912 read=idle write=<idle, bufsize=0>>)
+2019-03-18 11:34:32,523 - websockets.protocol - DEBUG - client - state = CONNECTING
+2019-03-18 11:34:32,531 - websockets.protocol - DEBUG - client - event = connection_made(<_SelectorSocketTransport fd=568 read=idle write=<idle, bufsize=0>>)
+2019-03-18 11:34:32,535 - asyncio - DEBUG - <socket.socket fd=568, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 53422, 0, 0), raddr=('::1', 8765, 0, 0)> connected to localhost:8765: (<_SelectorSocketTransport fd=568 read=polling write=<idle, bufsize=0>>, <websockets.client.WebSocketClientProtocol object at 0x09027FB0>)
+2019-03-18 11:34:32,545 - websockets.protocol - DEBUG - server - state = OPEN
+2019-03-18 11:34:32,549 - root - DEBUG - Waiting for message...
+2019-03-18 11:34:32,549 - asyncio - DEBUG - poll took 0.000 ms: 1 events
+2019-03-18 11:34:32,553 - websockets.protocol - DEBUG - client - state = OPEN
+2019-03-18 11:34:32,574 - root - DEBUG - Client init complete
+2019-03-18 11:34:32,593 - pf.infra.channel - DEBUG - Listening for updates...
+2019-03-18 11:34:32,600 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:34,614 - asyncio - INFO - poll 2000.000 ms took 2000.000 ms: timeout
+2019-03-18 11:34:34,624 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:36,625 - asyncio - INFO - poll 1985.000 ms took 1985.000 ms: timeout
+2019-03-18 11:34:36,634 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:38,645 - asyncio - INFO - poll 2000.000 ms took 2000.000 ms: timeout
+2019-03-18 11:34:38,648 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:40,639 - asyncio - INFO - poll 1984.000 ms took 1984.000 ms: timeout
+2019-03-18 11:34:40,643 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:42,649 - asyncio - INFO - poll 2000.000 ms took 2000.000 ms: timeout
+2019-03-18 11:34:42,662 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:44,673 - asyncio - INFO - poll 1985.000 ms took 1985.000 ms: timeout
+2019-03-18 11:34:44,684 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:46,689 - asyncio - INFO - poll 1984.000 ms took 1984.000 ms: timeout
+2019-03-18 11:34:46,701 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:48,706 - asyncio - INFO - poll 1985.000 ms took 1985.000 ms: timeout
+2019-03-18 11:34:48,717 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:50,722 - asyncio - INFO - poll 1984.000 ms took 1984.000 ms: timeout
+2019-03-18 11:34:50,726 - pf.infra.data_manager - DEBUG - Scanning layer images...
+2019-03-18 11:34:52,550 - websockets.protocol - DEBUG - server > Frame(fin=True, opcode=9, data=b'\xbb\xe7\xbar', rsv1=False, rsv2=False, rsv3=False)
+2019-03-18 11:35:02,587 - asyncio - DEBUG - Close <_WindowsSelectorEventLoop running=False closed=False debug=True>
+2019-03-18 11:35:02,672 - websockets.protocol - DEBUG - server - event = eof_received()
+2019-03-18 11:35:02,673 - websockets.protocol - DEBUG - server ! failing WebSocket connection in the OPEN state: 1006 [no reason]
+2019-03-18 11:35:02,674 - websockets.protocol - DEBUG - server - event = connection_lost(None)
+2019-03-18 11:35:02,674 - websockets.protocol - DEBUG - server - state = CLOSED
+2019-03-18 11:35:02,675 - websockets.protocol - DEBUG - server x code = 1006, reason = [no reason]
+2019-03-18 11:35:02,675 - websockets.protocol - DEBUG - server - aborted pending ping: bbe7ba72
+2019-03-18 11:35:02,676 - websockets.protocol - DEBUG - server x half-closing TCP connection
+2019-03-18 11:35:02,676 - websockets.server - ERROR - Error in connection handler
+Traceback (most recent call last):
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 674, in transfer_data
+    message = yield from self.read_message()
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 742, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 815, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 884, in read_frame
+    extensions=self.extensions,
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\framing.py", line 99, in read
+    data = yield from reader(2)
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\asyncio\streams.py", line 677, in readexactly
+    raise IncompleteReadError(incomplete, n)
+asyncio.streams.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\server.py", line 169, in handler
+    yield from self.ws_handler(self, path)
+  File "server.py", line 19, in handle_message
+    logger.debug("Waiting for message...")
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 434, in recv
+    yield from self.ensure_open()
+  File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 646, in ensure_open
+    ) from self.transfer_data_exc
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006 (connection closed abnormally [internal]), no reason
