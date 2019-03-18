@@ -271,3 +271,10 @@ Traceback (most recent call last):
   File "C:\Users\spadavala\AppData\Local\Programs\Python\Python37-32\lib\site-packages\websockets\protocol.py", line 646, in ensure_open
     ) from self.transfer_data_exc
 websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006 (connection closed abnormally [internal]), no reason
+2019-03-18 14:16:42,124 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 14:17:28,068 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 14:17:28,148 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 14:18:06,154 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 14:18:06,210 - asyncio - DEBUG - Using selector: SelectSelector
+2019-03-18 14:18:27,911 - pf.infra.images.utils - WARNING - Failed to load krita
+2019-03-18 14:18:28,021 - asyncio - DEBUG - Using selector: SelectSelector
