@@ -14,14 +14,14 @@ class Channel:
         self.ws.send(bson.dumps(message))
 
     async def process_message(self, message):
-        r = bson.loads(message)
-        logger.debug("Got message {}".format(request))
-        request = r["request"]
+        r = bson.load(message)
+        logger.debug("Got message {}".format(r))
+        request = r['request']
         data = r["data"]
-        if message["request"] == "RegisterImage":
-            self.data_manager.recv_image_definition(*data)
-        elif message["request"] == "UpdateTileData":
-            self.data_manager.recv_tile_update(*data)
+        if request == "RegisterImage":
+            self.data_manager.recv_image_definition(**data)
+        elif request == "UpdateTileData":
+            self.data_manager.recv_tile_update(**data)
         # elif message["request"] == "RegisterImage":
         #    self.data_manager.update_tile()
 
